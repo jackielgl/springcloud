@@ -15,7 +15,9 @@ public class OrderController {
     @Resource
     private RestTemplate restTemplate;
 
-    String url = "http://127.0.0.1:8001/";
+    //String url = "http://127.0.0.1:8001/";
+    String url = "http://CLOUD-PAYMENT-SERVICE/";
+
 
     @PostMapping(value = "/consumer/payment/create")
     public CommonResult create(@RequestBody Payment payment){
